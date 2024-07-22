@@ -1,0 +1,49 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="contactcss.css">
+<</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               <li><a href="index.html">
+<img border="0" alt="NRS Telecom" src="nrs.png" width="90" height="60"></li>
+                <li><a href="index.html"><br>Home</a></li>
+                <li><a href="about.html"><br>About Us</a></li>
+                <li><a href="services.html"><br>Services</a></li>
+                <li><a href="contact.html"><br>Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+	    <input type="hidden" name="access_key" value="38f3258c-d17b-4389-a2f7-af6d833da492">
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+	    <label for=phone">Phone No</label>
+ 	    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+	    <label for="Subject"> Subject</label>
+	    <select id="Subject">
+  	    <option value="phones">Iphones & Android</option>
+  	    <option value="repair">Repair</option>
+  	    <option value="Access">Accessories</option>
+	    </select>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 NRS Telecom</p>
+	<p> Mumbai </p>
+    </footer>
+</body>
+</html>
